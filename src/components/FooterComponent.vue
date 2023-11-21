@@ -19,7 +19,7 @@
         <section>
             <h5 class="text-uppercase">Contact</h5>
             <SeparatorComponent />
-            <p>{{ store.contacts.name }}</p>
+            <p>{{ store.contacts.address }}</p>
             <p>{{ store.contacts.email }}</p>
             <p>{{ store.contacts.telNumber }}</p>
         </section>
@@ -59,6 +59,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
+
+footer {
+    margin-bottom: 90px
+}
 
 a {
     color: black;

@@ -57,10 +57,11 @@ export const store = reactive({
         },
     ],
     contacts: {
-        name: 'Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051',
+        address: 'Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051',
         email: 'info@yourdomain.com',
         telNumber: '+99 (0) 101 0000 888',
         copyright: '© 2020 phlox business theme'
-    }
+    },
+    isLensClicked: false
 
 })

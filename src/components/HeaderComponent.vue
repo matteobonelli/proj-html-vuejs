@@ -15,7 +15,7 @@
             </ul>
             <div>
                 <button class="btn me-4 text-uppercase">Purchase</button>
-                <i class="fa-solid fa-magnifying-glass me-3"></i>
+                <i class="fa-solid fa-magnifying-glass me-3" @click="store.isLensClicked = true"></i>
             </div>
         </nav>
 
@@ -34,6 +34,8 @@ export default {
         return {
             store
         }
+    },
+    methods: {
     }
 }
 </script>
@@ -59,7 +61,11 @@ a {
 
 .fa-magnifying-glass {
     color: $magnifying_lens;
-    font-size: 1vw
+    font-size: 1vw;
+
+    &:hover {
+        cursor: pointer
+    }
 }
 
 .infos-bg {
