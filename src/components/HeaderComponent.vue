@@ -2,7 +2,7 @@
     <header>
         <div class="infos-bg">
             <div class="container d-flex justify-content-between align-items-center">
-                <div>{{ store.telephoneNum }}</div>
+                <div>{{ store.contacts.telNumber }}</div>
                 <ul>
                     <li v-for="social in store.socials" class="me-3">
                         <i class='fa-brands ' :class="social"></i>
@@ -11,14 +11,14 @@
             </div>
         </div>
         <nav class="d-flex justify-content-between align-items-center ">
-            <img src="../assets/images/log.png" alt="logo">
+            <img src="../assets/images/logo.png" alt="logo">
             <ul>
                 <li v-for="tab in store.navbar" class="me-4 text-uppercase ">
-                    <a href="#">{{ tab }}</a>
+                    <a :href="tab.url">{{ tab.name }}</a>
                 </li>
             </ul>
             <div>
-                <button class="btn me-5 text-uppercase">Purchase</button>
+                <button class="btn me-4 text-uppercase">Purchase</button>
                 <i class="fa-solid fa-magnifying-glass me-3"></i>
             </div>
         </nav>
@@ -46,7 +46,7 @@ header {
 }
 
 nav {
-    padding: 40px;
+    padding: 30px;
 }
 
 ul {
@@ -54,7 +54,6 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: $text_navbar;
 }
 
