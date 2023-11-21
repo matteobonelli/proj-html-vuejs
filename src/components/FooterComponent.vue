@@ -32,15 +32,21 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </footer>
+    <div class="d-flex justify-content-between align-items-center infos-bg">
+        <div class="text-light text-uppercase">{{ store.contacts.copyright }}</div>
+        <SocialComponent />
+    </div>
 </template>
 
 <script>
+import SocialComponent from './social/SocialComponent.vue'
 import SeparatorComponent from './separator/SeparatorComponent.vue'
 import { store } from '../assets/data/store'
 export default {
     name: 'FooterComponent',
     components: {
-        SeparatorComponent
+        SeparatorComponent,
+        SocialComponent
     },
     data() {
         return {
@@ -52,6 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
 a {
     color: black;
 }
@@ -59,5 +67,10 @@ a {
 section {
     width: 25%;
     margin: 0 50px;
+}
+
+.infos-bg {
+    background-color: $brand_infos;
+    padding: 40px;
 }
 </style>

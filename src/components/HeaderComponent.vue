@@ -3,11 +3,7 @@
         <div class="infos-bg">
             <div class="container d-flex justify-content-between align-items-center">
                 <div>{{ store.contacts.telNumber }}</div>
-                <ul>
-                    <li v-for="social in store.socials" class="me-3">
-                        <i class='fa-brands ' :class="social"></i>
-                    </li>
-                </ul>
+                <SocialComponent />
             </div>
         </div>
         <nav class="d-flex justify-content-between align-items-center ">
@@ -27,9 +23,13 @@
 </template>
 
 <script>
+import SocialComponent from './social/SocialComponent.vue';
 import { store } from '../assets/data/store'
 export default {
     name: 'HeaderComponent',
+    components: {
+        SocialComponent
+    },
     data() {
         return {
             store
