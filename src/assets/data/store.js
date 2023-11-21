@@ -62,6 +62,27 @@ export const store = reactive({
         telNumber: '+99 (0) 101 0000 888',
         copyright: '© 2020 phlox business theme'
     },
-    isLensClicked: false
+    isLensClicked: false,
+    jumbos: [
+        {
+            titleTop: 'We are a',
+            titleBottom: 'Web Design ',
+            greenWord: 'Agency',
+            image: 'slide1.png'
+        },
+        {
+            titleTop: 'A Group of',
+            titleBottom: 'Expert ',
+            greenWord: 'Planners',
+            image: 'slide2.png'
+        },
+        {
+            titleTop: 'Focus',
+            titleBottom: 'on Your ',
+            greenWord: 'Business',
+            image: 'slide3.png'
+        },
+    ],
+    index: 0
 
 })

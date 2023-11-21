@@ -18,7 +18,7 @@ export default {
 @use '../../assets/styles/partials/variables' as *;
 
 .separator {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .small {
@@ -28,13 +28,13 @@ export default {
 }
 
 .big {
-    width: 50px;
+    width: 70px;
 
 }
 
 .small,
 .big {
     border-radius: 10px;
-    border: 2px solid $magnifying_lens;
+    border: 4px solid $magnifying_lens;
 }
 </style>

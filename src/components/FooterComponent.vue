@@ -61,7 +61,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 footer {
-    margin-bottom: 90px
+    margin-bottom: 90px;
 }
 
 a {

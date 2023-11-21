@@ -4,11 +4,20 @@
       <SearchBar v-if="store.isLensClicked" />
     </Transition>
     <HeaderComponent />
-    <FooterComponent />
+    <div class="body-container">
+      <main>
+        <MainComponent />
+      </main>
+      <div class="prov">
+        <FooterComponent />
+      </div>
+
+    </div>
   </div>
 </template>
 
 <script>
+import MainComponent from './components/MainComponent.vue'
 import SearchBar from './components/SearchBar.vue'
 import { store } from './assets/data/store'
 import HeaderComponent from './components/HeaderComponent.vue';
@@ -18,7 +27,8 @@ export default {
   components: {
     HeaderComponent,
     FooterComponent,
-    SearchBar
+    SearchBar,
+    MainComponent
   },
   data() {
     return {
@@ -29,6 +39,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.body-container {
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.prov {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+
 .app-container {
   position: relative;
 }

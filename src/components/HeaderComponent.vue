@@ -45,6 +45,7 @@ export default {
 
 header {
     background-color: $brand_primary;
+    height: 160px;
 }
 
 nav {
