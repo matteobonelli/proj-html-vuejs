@@ -17,7 +17,7 @@
                     exercitationem, delectus ex perferendis harum odit in natus veritatis quae aliquam obcaecati aspernatur
                     molestiae fuga vel!
                 </p>
-                <button class="btn btn-dark mb-5 text-uppercase">Read More</button>
+                <button class="btn text-light mb-5 text-uppercase">Read More</button>
                 <ul class="d-flex fw-bold">
                     <li>Facebook </li>
                     <li>Instagram </li>
@@ -79,8 +79,7 @@ img {
 }
 
 .btn {
-    border-radius: 40px;
-    padding: 15px 40px;
+    background-color: #212529 !important;
 }
 
 li {

@@ -14,7 +14,7 @@
                 </li>
             </ul>
             <div>
-                <button class="btn me-4 text-uppercase">Purchase</button>
+                <button class="btn me-4 text-light text-uppercase">Purchase</button>
                 <i class="fa-solid fa-magnifying-glass me-3" @click="store.isLensClicked = true"></i>
             </div>
         </nav>
@@ -73,13 +73,6 @@ a {
     background-color: $brand_infos;
     color: white;
     padding: 10px 0;
-}
-
-.btn {
-    background-color: $magnifying_lens;
-    color: white;
-    padding: 20px 60px;
-    border-radius: 40px;
 }
 
 .container {

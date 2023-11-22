@@ -1,5 +1,5 @@
 <template>
-  <Transition>
+  <Transition appear>
     <SearchBar v-if="store.isLensClicked" />
   </Transition>
   <HeaderComponent />

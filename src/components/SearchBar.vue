@@ -45,14 +45,14 @@ i {
 .searchbar {
     width: 100%;
     height: 100vh;
-    background-color: rgba($color: #ffffff, $alpha: 0.95);
+    background-color: rgba($color: #ffffff, $alpha: 0.98);
     position: absolute;
-    z-index: 10000;
+    z-index: 110000;
 }
 
 .fa-circle-xmark {
     position: absolute;
-    z-index: 10001;
+    z-index: 110001;
     right: 0;
     padding: 20px;
     font-size: 2vw;
