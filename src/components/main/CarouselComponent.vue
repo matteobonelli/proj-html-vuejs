@@ -1,13 +1,13 @@
 <template>
     <div class="carousel-container">
-        <SlideComponent :class="{ 'd-none': store.index !== index }" v-for="jumbo, index in store.jumbos"
+        <SlideComponent :class="{ 'd-none': store.carouselIndex !== index }" v-for="jumbo, index in store.jumbos"
             :title1="jumbo.titleTop" :title2="jumbo.titleBottom" :greenword="jumbo.greenWord" :image="jumbo.image"
             :id="index" :key="index" />
-        <div class="caret-container right d-flex align-items-center justify-content-center" @click="scrollRight(index)">
+        <div class="caret-container right d-flex align-items-center justify-content-center" @click="scrollRight">
             <i class="fa-solid fa-caret-right"></i>
         </div>
-        <div class="caret-container left d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-caret-left" @click="scrollLeft(index)"></i>
+        <div class="caret-container left d-flex align-items-center justify-content-center" @click="scrollLeft">
+            <i class="fa-solid fa-caret-left"></i>
         </div>
     </div>
 </template>
@@ -27,18 +27,18 @@ export default {
     },
     methods: {
         scrollRight() {
-            store.index += 1
+            store.carouselIndex += 1
 
-            if (store.index === store.jumbos.length) {
-                store.index = 0
+            if (store.carouselIndex === store.jumbos.length) {
+                store.carouselIndex = 0
             }
 
         },
         scrollLeft() {
-            if (store.index === 0) {
-                store.index = store.jumbos.length
+            if (store.carouselIndex === 0) {
+                store.carouselIndex = store.jumbos.length
             }
-            store.index -= 1
+            store.carouselIndex -= 1
 
         }
     }
@@ -50,11 +50,11 @@ export default {
 
 .carousel-container {
     position: relative;
+    height: 800px;
 }
 
 .caret-container {
     position: absolute;
-    z-index: 100;
     font-size: 2vw;
     width: 50px;
     height: 50px;

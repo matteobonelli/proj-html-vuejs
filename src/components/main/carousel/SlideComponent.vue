@@ -53,8 +53,9 @@ export default {
 
 .slide-container {
     position: relative;
-    height: 800px;
-    overflow: hidden
+    height: 100%;
+    overflow: hidden;
+    background: $brand_main_bg;
 }
 
 .green-color {
@@ -75,7 +76,6 @@ img {
     position: absolute;
     right: -6%;
     top: -50px;
-    z-index: 9;
 }
 
 .btn {

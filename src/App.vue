@@ -1,18 +1,15 @@
 <template>
-  <div class="app-container">
-    <Transition>
-      <SearchBar v-if="store.isLensClicked" />
-    </Transition>
-    <HeaderComponent />
-    <div class="body-container">
-      <main>
-        <MainComponent />
-      </main>
-      <div class="prov">
-        <FooterComponent />
-      </div>
+  <Transition>
+    <SearchBar v-if="store.isLensClicked" />
+  </Transition>
+  <HeaderComponent />
+  <div class="body-container">
+    <main>
+      <MainComponent />
+    </main>
+    <FooterComponent />
 
-    </div>
+
   </div>
 </template>
 
@@ -44,19 +41,9 @@ export default {
   overflow-y: auto;
 }
 
-.prov {
-  position: relative;
-  z-index: 10;
-  background-color: white;
-}
-
-.app-container {
-  position: relative;
-}
-
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.9s ease;
+  transition: opacity 0.5s ease;
 }
 
 .v-enter-from,

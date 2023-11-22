@@ -83,6 +83,23 @@ export const store = reactive({
             image: 'slide3.png'
         },
     ],
-    index: 0
-
+    carouselIndex: 0,
+    optionCard: [
+        {
+            name: 'Speed Optimization',
+            image: 'fa-gauge-high'
+        },
+        {
+            name: 'Cloud Solutions',
+            image: 'fa-cloud'
+        },
+        {
+            name: 'Website Design',
+            image: 'fa-tablet-screen-button'
+        },
+        {
+            name: 'Online Marketing',
+            image: 'fa-stopwatch'
+        },
+    ]
 })

@@ -47,12 +47,12 @@ i {
     height: 100vh;
     background-color: rgba($color: #ffffff, $alpha: 0.95);
     position: absolute;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .fa-circle-xmark {
     position: absolute;
-    z-index: 1001;
+    z-index: 10001;
     right: 0;
     padding: 20px;
     font-size: 2vw;
