@@ -56,6 +56,8 @@ export default {
     height: 100%;
     overflow: hidden;
     background: $brand_main_bg;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
 .green-color {
@@ -80,6 +82,10 @@ img {
 
 .btn {
     background-color: #212529 !important;
+}
+
+.btn:hover {
+    background-color: $magnifying_lens !important;
 }
 
 li {

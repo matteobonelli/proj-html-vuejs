@@ -24,6 +24,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.search-container {
+    position: relative;
+    z-index: 100000;
+}
+
 .form-outline {
     width: 50%;
 }

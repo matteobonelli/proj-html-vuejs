@@ -50,7 +50,6 @@ export default {
 }
 
 .main-comp-options {
-    margin: 200px 0;
     height: 800px;
 }
 

@@ -101,5 +101,51 @@ export const store = reactive({
             name: 'Online Marketing',
             image: 'fa-stopwatch'
         },
+    ],
+    designs: [
+        {
+            image: 'flowers.jpg',
+            name: 'The Basket of Flowers',
+            genre1: 'Branding',
+            genre2: 'Marketing'
+        },
+        {
+            image: 'wheel.jpg',
+            name: 'A Famous Ferris Wheel',
+            genre1: 'Marketing',
+        },
+        {
+            image: 'shoes.jpg',
+            name: 'Complementary Colors',
+            genre1: 'Branding',
+            genre2: 'Marketing'
+        },
+        {
+            image: 'desk.jpg',
+            name: 'Business Prestige',
+            genre1: 'Branding',
+        },
+        {
+            image: 'paper.jpg',
+            name: 'Colorful Origami Boats',
+            genre1: 'Branding',
+            genre2: 'Marketing'
+        },
+        {
+            image: 'sofa.jpg',
+            name: 'Modern Couch',
+            genre1: 'Marketing',
+        },
+        {
+            image: 'baloons.jpg',
+            name: 'Hot Air Baloons',
+            genre1: 'Branding',
+            genre2: 'Marketing'
+        },
+        {
+            image: 'orange.jpg',
+            name: 'Make Difference',
+            genre1: 'Branding',
+        },
     ]
 })

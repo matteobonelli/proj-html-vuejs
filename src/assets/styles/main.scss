@@ -22,6 +22,7 @@ a {
     background-color: $magnifying_lens;
     border-radius: 40px;
     padding: 15px 40px;
+    transition: background-color 0.5s ease;
 
     &:hover {
         background-color: #212529;
