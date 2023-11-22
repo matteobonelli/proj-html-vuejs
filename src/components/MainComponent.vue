@@ -3,17 +3,15 @@
     <div class="section-container">
         <OptionsComponent />
     </div>
-
-
     <AboutUsComponent />
-
-
     <div class="section-container">
         <DesignComponent />
     </div>
+    <CommentsComponent />
 </template>
 
 <script>
+import CommentsComponent from './main/CommentsComponent.vue';
 import OptionsComponent from './main/OptionsComponent.vue'
 import { store } from '../assets/data/store'
 import AboutUsComponent from './main/AboutUsComponent.vue';
@@ -27,7 +25,8 @@ export default {
         SeparatorComponent,
         OptionsComponent,
         AboutUsComponent,
-        DesignComponent
+        DesignComponent,
+        CommentsComponent
     },
     data() {
         return {

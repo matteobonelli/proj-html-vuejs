@@ -61,6 +61,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 footer {
+    padding-top: 60px;
     margin-bottom: 90px;
 }
 
