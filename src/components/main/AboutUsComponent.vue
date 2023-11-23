@@ -72,6 +72,12 @@ img {
 .top-image {
     position: relative;
     z-index: 1;
+    left: 0;
+    transition: left 1.5s ease;
+
+    &:hover {
+        left: 5%;
+    }
 }
 
 .green-img {

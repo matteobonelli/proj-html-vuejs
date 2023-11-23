@@ -1,16 +1,16 @@
 <template>
-  <Transition appear>
-    <SearchBar v-if="store.isLensClicked" />
-  </Transition>
-  <HeaderComponent />
-  <div class="body-container">
-    <main>
-      <MainComponent />
-    </main>
-    <FooterComponent />
-
-
-  </div>
+  <body>
+    <Transition appear>
+      <SearchBar v-if="store.isLensClicked" />
+    </Transition>
+    <HeaderComponent />
+    <div class="body-container">
+      <main>
+        <MainComponent />
+      </main>
+      <FooterComponent />
+    </div>
+  </body>
 </template>
 
 <script>
@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
 .body-container {
   height: calc(100vh - 160px);
   overflow-y: auto;

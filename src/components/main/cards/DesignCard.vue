@@ -1,7 +1,7 @@
 <template>
     <div class="col-12 col-md-3 mb-3" @mouseover="isHovered" @mouseleave="hovered = false">
         <div class="mask d-flex justify-content-end flex-column p-4 text-light" :class="{ 'd-none': !hovered }">
-            <h4>{{ name }}</h4>
+            <h4 class="fw-bold">{{ name }}</h4>
             <div class="d-flex text-uppercase">
                 <h5 class="me-2">{{ genre1 }}</h5>
                 <h5>{{ genre2 }}</h5>
@@ -50,7 +50,7 @@ img {
     position: absolute;
     width: 94%;
     height: 100%;
-    background-color: $magnifying_lens;
+    background: linear-gradient(to right top, #00d9a6, #3fdc96, #5fde84, #7bdf72, #95e060);
     opacity: 0;
 }
 

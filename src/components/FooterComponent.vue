@@ -11,7 +11,7 @@
             <h5 class="text-uppercase">Quick Links</h5>
             <SeparatorComponent />
             <ul>
-                <li v-for="link in store.quickLinks">
+                <li class="mb-2" v-for="link in store.quickLinks">
                     <a :href="link.url">{{ link.name }}</a>
                 </li>
             </ul>
@@ -65,8 +65,16 @@ footer {
     margin-bottom: 90px;
 }
 
+h5 {
+    font-weight: bold;
+}
+
 a {
     color: black;
+
+    &:hover {
+        color: $magnifying_lens;
+    }
 }
 
 section {

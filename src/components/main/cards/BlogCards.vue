@@ -55,7 +55,7 @@ export default {
         }
 
         .text-container {
-            background-color: $magnifying_lens ;
+            background: linear-gradient(to right top, #00d9a6, #3fdc96, #5fde84, #7bdf72, #95e060);
             color: white;
             bottom: -20%;
 

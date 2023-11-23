@@ -7,6 +7,8 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
 
 ul {
     list-style: none;
@@ -19,12 +21,14 @@ a {
 }
 
 .btn {
-    background-color: $magnifying_lens;
+    background: linear-gradient(to right top, #00d9a6, #3fdc96, #5fde84, #7bdf72, #95e060);
     border-radius: 40px;
     padding: 15px 40px;
-    transition: background-color 0.5s ease;
+    transition: transform 0.5s ease;
+    box-shadow: 1px 1px 20px 10px rgba($color: #5fde84, $alpha: 0.2);
 
     &:hover {
-        background-color: #212529;
+        background: linear-gradient(to right top, #454545, #373737, #292929, #1c1c1c, #0d0d0d);
+        transform: scale(1.1);
     }
 }

@@ -14,7 +14,7 @@
                 </li>
             </ul>
             <div>
-                <button class="btn me-4 text-light text-uppercase">Purchase</button>
+                <button class="btn me-4 text-light text-uppercase fw-bold">Purchase</button>
                 <i class="fa-solid fa-magnifying-glass me-3" @click="store.isLensClicked = true"></i>
             </div>
         </nav>
@@ -51,6 +51,7 @@ header {
 
 nav {
     padding: 30px;
+    font-weight: bold;
 }
 
 ul {
@@ -59,6 +60,10 @@ ul {
 
 a {
     color: $text_navbar;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .fa-magnifying-glass {

@@ -41,6 +41,7 @@ input {
     width: 50%;
     font-size: 1.5vw;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 i {

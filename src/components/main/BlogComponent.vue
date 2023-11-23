@@ -45,10 +45,14 @@ export default {
 
 .btn {
     margin-top: 150px;
-    background-color: #212529 !important;
+    background: linear-gradient(to right top, #454545, #373737, #292929, #1c1c1c, #0d0d0d);
+    transition: transform 0.5s ease;
+    box-shadow: 1px 1px 20px 10px rgba($color: #000000, $alpha: 0.1);
 
     &:hover {
-        background-color: $magnifying_lens !important;
+
+        background: linear-gradient(to right top, #00d9a6, #3fdc96, #5fde84, #7bdf72, #95e060);
+        transform: scale(1.1);
     }
 }
 </style>
