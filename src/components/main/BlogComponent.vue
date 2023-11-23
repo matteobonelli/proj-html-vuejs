@@ -8,7 +8,7 @@
             <BlogCards v-for="blog in store.blogs" :image="blog.image" :title="blog.title" :date="blog.date" />
         </div>
         <div class="d-flex justify-content-center">
-            <button class="btn text-uppercase text-light">View All Post</button>
+            <button class="btn text-uppercase text-light">View All Posts</button>
         </div>
     </div>
 </template>

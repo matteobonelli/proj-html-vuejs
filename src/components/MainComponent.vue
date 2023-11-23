@@ -9,9 +9,11 @@
     </div>
     <CommentsComponent />
     <BlogComponent />
+    <BrandsComponent />
 </template>
 
 <script>
+import BrandsComponent from './main/BrandsComponent.vue';
 import BlogComponent from './main/BlogComponent.vue'
 import CommentsComponent from './main/CommentsComponent.vue';
 import OptionsComponent from './main/OptionsComponent.vue'
@@ -29,7 +31,8 @@ export default {
         AboutUsComponent,
         DesignComponent,
         CommentsComponent,
-        BlogComponent
+        BlogComponent,
+        BrandsComponent
     },
     data() {
         return {

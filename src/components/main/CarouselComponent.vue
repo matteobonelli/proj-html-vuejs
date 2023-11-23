@@ -43,7 +43,7 @@ export default {
 
         },
         autoScroll() {
-            setInterval(this.scrollRight, 5000)
+            setInterval(this.scrollRight, 7000)
         }
     },
     created() {

@@ -164,5 +164,25 @@ export const store = reactive({
             title: 'Develop Your Startup Idea',
             date: 'May 24, 2018 by Alex'
         },
+    ],
+    brands: [
+        {
+            image: 'client1.png'
+        },
+        {
+            image: 'client2.png'
+        },
+        {
+            image: 'client3.png'
+        },
+        {
+            image: 'client4.png'
+        },
+        {
+            image: 'client5.png'
+        },
+        {
+            image: 'client6.png'
+        },
     ]
 })
