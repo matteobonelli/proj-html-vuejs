@@ -31,6 +31,9 @@ export default {
     return {
       store
     }
+  },
+  methods: {
+
   }
 }
 </script>
@@ -38,6 +41,7 @@ export default {
 <style lang="scss" scoped>
 body {
   font-family: 'Quicksand', sans-serif;
+  position: relative;
 }
 
 .body-container {

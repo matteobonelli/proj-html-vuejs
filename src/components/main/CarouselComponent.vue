@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel-container">
+    <div class="carousel-container" ref="start">
         <TransitionGroup name="fade">
             <SlideComponent v-for="jumbo, index in store.jumbos" :title1="jumbo.titleTop" :title2="jumbo.titleBottom"
                 :greenword="jumbo.greenWord" :image="jumbo.image" :id="index" :key="index" />
@@ -11,6 +11,7 @@
             <i class="fa-solid fa-caret-left"></i>
         </div>
     </div>
+    <i class="fa-regular fa-circle-up" @click="scrollUp"></i>
 </template>
 
 <script>
@@ -44,6 +45,9 @@ export default {
         },
         autoScroll() {
             setInterval(this.scrollRight, 7000)
+        },
+        scrollUp() {
+            this.$refs.start.scrollIntoView({ behavior: "smooth" })
         }
     },
     created() {
@@ -101,5 +105,19 @@ export default {
 .left {
     right: 54%;
     bottom: 10%;
+}
+
+.fa-circle-up {
+    position: absolute;
+    z-index: 10000;
+    bottom: 4%;
+    right: 3%;
+    font-size: 2vw;
+    background-color: white;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 </style>
