@@ -110,8 +110,8 @@ export default {
 .fa-circle-up {
     position: absolute;
     z-index: 10000;
-    bottom: 4%;
-    right: 3%;
+    bottom: 8%;
+    right: 2%;
     font-size: 2vw;
     background-color: white;
     border-radius: 50%;
