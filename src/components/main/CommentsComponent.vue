@@ -37,7 +37,7 @@ h4 {
 }
 
 .comment-container {
-    height: 1000px;
+    height: 800px;
     background-image: url('../../assets/images/reunion.jpg');
     background-size: cover;
     background-position: center;

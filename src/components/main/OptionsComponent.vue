@@ -1,5 +1,5 @@
 <template>
-    <div class="main-comp-options d-flex justify-content-between  align-items-center">
+    <div class="main-comp-options d-flex align-items-center">
         <div class="title-container">
             <h2 class="display-1 fw-bold">
                 We Are Here To Make Your <span class="green-color">Website</span> Look More <span

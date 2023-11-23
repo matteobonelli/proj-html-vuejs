@@ -25,6 +25,18 @@ export default {
     padding: 40px;
     width: 400px;
     margin: 30px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        color: white !important;
+        background-color: $magnifying_lens;
+        cursor: pointer;
+
+        i {
+            transition: color 0.5s ease;
+            color: white;
+        }
+    }
 }
 
 i {

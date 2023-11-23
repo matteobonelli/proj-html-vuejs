@@ -8,9 +8,11 @@
         <DesignComponent />
     </div>
     <CommentsComponent />
+    <BlogComponent />
 </template>
 
 <script>
+import BlogComponent from './main/BlogComponent.vue'
 import CommentsComponent from './main/CommentsComponent.vue';
 import OptionsComponent from './main/OptionsComponent.vue'
 import { store } from '../assets/data/store'
@@ -26,7 +28,8 @@ export default {
         OptionsComponent,
         AboutUsComponent,
         DesignComponent,
-        CommentsComponent
+        CommentsComponent,
+        BlogComponent
     },
     data() {
         return {

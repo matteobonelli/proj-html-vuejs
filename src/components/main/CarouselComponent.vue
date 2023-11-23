@@ -1,8 +1,9 @@
 <template>
     <div class="carousel-container">
-        <SlideComponent :class="{ 'd-none': store.carouselIndex !== index }" v-for="jumbo, index in store.jumbos"
-            :title1="jumbo.titleTop" :title2="jumbo.titleBottom" :greenword="jumbo.greenWord" :image="jumbo.image"
-            :id="index" :key="index" />
+        <TransitionGroup name="fade">
+            <SlideComponent v-for="jumbo, index in store.jumbos" :title1="jumbo.titleTop" :title2="jumbo.titleBottom"
+                :greenword="jumbo.greenWord" :image="jumbo.image" :id="index" :key="index" />
+        </TransitionGroup>
         <div class="caret-container right d-flex align-items-center justify-content-center" @click="scrollRight">
             <i class="fa-solid fa-caret-right"></i>
         </div>
@@ -40,7 +41,13 @@ export default {
             }
             store.carouselIndex -= 1
 
+        },
+        autoScroll() {
+            setInterval(this.scrollRight, 5000)
         }
+    },
+    created() {
+        this.autoScroll()
     }
 }
 </script>
@@ -67,6 +74,23 @@ export default {
         cursor: pointer;
     }
 
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 2s ease;
+    overflow: hidden;
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
 }
 
 .right {

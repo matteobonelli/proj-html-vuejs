@@ -1,5 +1,5 @@
 <template>
-    <div class="slide-container d-flex align-items-center">
+    <div class="slide-container d-flex align-items-center" v-if="store.carouselIndex === id">
         <img :src="'/images/' + image" alt="slide">
         <div class="container">
             <div class="text-container">
@@ -9,12 +9,14 @@
                 <h2 class=" display-1 fw-bold">{{ title2 }} <span class="green-color">{{ greenword }}</span>
                 </h2>
                 <SeparatorComponent />
-                <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos a earum quidem itaque aliquid!
+                <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos a earum quidem itaque
+                    aliquid!
                     Eius iusto
                     non,
                     ratione nam aperiam facere sequi iure. Error hic nam placeat soluta ut itaque illum omnis blanditiis
                     alias
-                    exercitationem, delectus ex perferendis harum odit in natus veritatis quae aliquam obcaecati aspernatur
+                    exercitationem, delectus ex perferendis harum odit in natus veritatis quae aliquam obcaecati
+                    aspernatur
                     molestiae fuga vel!
                 </p>
                 <button class="btn text-light mb-5 text-uppercase">Read More</button>
@@ -33,6 +35,7 @@
 </template>
 
 <script>
+import { store } from '../../../assets/data/store'
 import SeparatorComponent from '../../separator/SeparatorComponent.vue';
 export default {
     name: 'SlideComponent',
@@ -40,10 +43,16 @@ export default {
         title1: String,
         title2: String,
         greenword: String,
-        image: String
+        image: String,
+        id: Number
     },
     components: {
         SeparatorComponent
+    },
+    data() {
+        return {
+            store
+        }
     }
 }
 </script>

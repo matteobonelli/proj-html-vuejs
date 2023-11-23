@@ -147,5 +147,22 @@ export const store = reactive({
             name: 'Make Difference',
             genre1: 'Branding',
         },
+    ],
+    blogs: [
+        {
+            image: 'businesswoman.jpg',
+            title: 'Marketing Ideas',
+            date: 'May 24, 2018 by Alex'
+        },
+        {
+            image: 'businessman.jpg',
+            title: 'Rest During Working Hours',
+            date: 'May 24, 2018 by Alex'
+        },
+        {
+            image: 'room.jpg',
+            title: 'Develop Your Startup Idea',
+            date: 'May 24, 2018 by Alex'
+        },
     ]
 })
